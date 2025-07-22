@@ -546,7 +546,7 @@ const Portfolio = () => {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 20px;
-        max-width: 1000px;
+        max-width: 1300px;
         margin: 0 auto;
       }
 
@@ -1282,6 +1282,12 @@ const Portfolio = () => {
       icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
       isImage: true
     },
+    {
+      name: 'C/C++',
+      level: 70,
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg',
+      isImage: true
+    },
     // Database
     {
       name: 'MySQL',
@@ -1301,6 +1307,7 @@ const Portfolio = () => {
       icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg',
       isImage: true
     },
+    // DevOps & Tools
     {
       name: 'Docker',
       level: 60,
@@ -1318,8 +1325,16 @@ const Portfolio = () => {
       level: 85,
       icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
       isImage: true
+    },
+    // Other Tools
+    {
+      name: 'Postman',
+      level: 65,
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg',
+      isImage: true
     }
   ];
+  
 
   const achievements = [
     {
@@ -1369,12 +1384,25 @@ const Portfolio = () => {
 
   const projects = [
     {
+      title: 'Chat Application - Cross-platform Real-time Messaging System',
+      description: 'A full-stack real-time chat system with Spring Boot backend, ReactJS web app, and React Native mobile app. Features secure authentication, contact management, and instant messaging via WebSocket/STOMP. Deployed on AWS with Docker containerization. Supports cross-platform messaging, media uploads, and real-time notifications across web and mobile platforms.',
+      tech: ['Spring Boot', 'ReactJS', 'React Native', 'MongoDB', 'JWT', 'WebSocket', 'STOMP', 'Redux Toolkit', 'Ant Design', 'Vite', 'Expo', 'Docker', 'AWS', 'SockJS'],
+      status: 'Completed',
+      duration: 'Dec 2024 – May 2025',
+      teamSize: 5,
+      github: [
+        { label: 'Backend', url: 'https://github.com/QuocBinh042/01-chatapp-springboot' },
+        { label: 'Website', url: 'https://github.com/QuocBinh042/02-chatapp-reactjs' },
+        { label: 'Mobile', url: 'https://github.com/QuocBinh042/03-chatapp-reactnative' }
+      ]
+    },
+    {
       title: 'E-Commerce Web Application',
       description: 'A fully functional online footwear retail system with separate frontend (ReactJS, Ant Design, Redux Toolkit) and backend (Spring Boot, MySQL, JWT, Docker). The platform supports product browsing, cart and order management, secure user/admin authentication, VnPay payment, Cloudinary image storage, Redis caching, and is fully containerized for deployment. All APIs are documented with Swagger.',
       tech: ['ReactJS', 'Spring Boot', 'MySQL', 'Ant Design', 'Redux Toolkit', 'JWT', 'Docker', 'Redis', 'Swagger', 'Cloudinary', 'VnPay'],
       status: 'Completed',
       duration: 'Dec 2024 – May 2025',
-      teamSize: 2,
+      teamSize: 1,
       github: [
         { label: 'Frontend', url: 'https://github.com/QuocBinh042/shoe-store-frontend' },
         { label: 'Backend', url: 'https://github.com/QuocBinh042/shoe-store-backend' }
@@ -1386,23 +1414,22 @@ const Portfolio = () => {
       tech: ['Next.js', 'TypeScript', 'Ant Design', 'Spring Boot 3', 'MongoDB', 'gRPC', 'RabbitMQ', 'JWT', 'Docker', 'Kubernetes', 'Helm', 'Redis', 'GitLab CI/CD'],
       status: 'In Progress',
       duration: 'May 2025 - Present',
-      teamSize: 2,
+      teamSize: 3,
       github: []
     },
     {
-      title: '📱 School Connection – Android App for Smart School Communication',
+      title: 'School Connection – Android App for Smart School Communication',
       description: 'Android app developed to centralize school–parent–student communication via five modules: instant announcements (push + TTS), contact (in-app calling/chat without saving numbers), anonymous feedback channel, dynamic class schedules, and monthly conduct tracking. Features secure role-based access for 6 user types. SQL Server cloud-hosted backend, Vietnamese UI with text-to-speech support.',
-      tech: ['Java', 'Android Studio', 'Microsoft SQL Server 2014', 'Voice Assistant', 'Vietnamese Language', 'Android 4.0.3+', 'Online Database'],
+      tech: ['Java', 'Android Studio', 'Microsoft SQL Server 2014', 'Voice Assistant', 'Vietnamese Language', 'Android 4.0.3+', 'Online Database'],
       status: 'Completed',
-      duration: '2019–2020',
+      duration: '2019',
       teamSize: 2,
       github: [],
       media: [
         { type: 'video', url: 'https://drive.google.com/file/d/10_VpH94rVx8JbpGq8sKbTMHcM6oiwZwQ/view?usp=sharing' },
         { type: 'video', url: 'https://drive.google.com/file/d/1K5WiHekcCtyh2XTqdoWlNl3crEKcNshO/view?usp=sharing' }
-      ] as MediaItem[]
+      ]
     }
-
   ];
 
   return (
