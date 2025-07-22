@@ -1,16 +1,16 @@
 import './globals.css';
 
 export const metadata = {
-  title: "Portfolio | Trần Lê Quốc Bình",
+  title: "Trần Lê Quốc Bình",
   description: "Trang portfolio cá nhân của Trần Lê Quốc Bình - Lập trình viên, sinh viên IUH.",
   openGraph: {
-    title: "Portfolio | Trần Lê Quốc Bình",
+    title: "Trần Lê Quốc Bình",
     description: "Trang portfolio cá nhân của Trần Lê Quốc Bình - Lập trình viên, sinh viên IUH.",
     url: "https://quocbinhdev.vercel.app/",
-    siteName: "Portfolio | Trần Lê Quốc Bình",
+    siteName: "Trần Lê Quốc Bình",
     images: [
       {
-        url: "/images/og-image.png",
+        url: "/image/og-image.png",
         width: 1200,
         height: 630,
         alt: "Portfolio Trần Lê Quốc Bình",
@@ -21,7 +21,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Portfolio | Trần Lê Quốc Bình",
+    title: "Trần Lê Quốc Bình",
     description: "Trang portfolio cá nhân của Trần Lê Quốc Bình - Lập trình viên, sinh viên IUH.",
     images: ["/images/og-image.png"],
   },
