@@ -1428,8 +1428,8 @@ const Portfolio = () => {
       media: [
         { type: 'video', url: 'https://drive.google.com/file/d/10_VpH94rVx8JbpGq8sKbTMHcM6oiwZwQ/view?usp=sharing' },
         { type: 'video', url: 'https://drive.google.com/file/d/1K5WiHekcCtyh2XTqdoWlNl3crEKcNshO/view?usp=sharing' }
-      ]
-    }
+      ] as MediaItem[]
+    } 
   ];
 
   return (
