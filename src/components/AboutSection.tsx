@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 type Achievement = {
   achievement: string;
@@ -236,9 +237,11 @@ const AboutSection: React.FC<AboutSectionProps> = ({ achievements }) => {
                         <div style={{ display: 'flex', justifyContent: 'center', gap: '8px', alignItems: 'center' }}>
                           {/* Image Evidence */}
                           {award.imageUrl && (
-                            <img
+                            <Image
                               src={award.imageUrl}
                               alt={`${award.achievement} certificate`}
+                              width={50}
+                              height={38}
                               onClick={() => openImageModal(award.imageUrl!, award.achievement, award.description)}
                               style={{
                                 width: '50px',
@@ -251,16 +254,17 @@ const AboutSection: React.FC<AboutSectionProps> = ({ achievements }) => {
                                 filter: 'brightness(0.9)'
                               }}
                               onMouseEnter={(e) => {
-                                e.currentTarget.style.transform = 'scale(1.1)';
-                                e.currentTarget.style.filter = 'brightness(1.1)';
-                                e.currentTarget.style.borderColor = 'var(--primary)';
+                                (e.currentTarget as HTMLElement).style.transform = 'scale(1.1)';
+                                (e.currentTarget as HTMLElement).style.filter = 'brightness(1.1)';
+                                (e.currentTarget as HTMLElement).style.borderColor = 'var(--primary)';
                               }}
                               onMouseLeave={(e) => {
-                                e.currentTarget.style.transform = 'scale(1)';
-                                e.currentTarget.style.filter = 'brightness(0.9)';
-                                e.currentTarget.style.borderColor = 'var(--glass-border)';
+                                (e.currentTarget as HTMLElement).style.transform = 'scale(1)';
+                                (e.currentTarget as HTMLElement).style.filter = 'brightness(0.9)';
+                                (e.currentTarget as HTMLElement).style.borderColor = 'var(--glass-border)';
                               }}
                               title="Click to view certificate"
+                              unoptimized
                             />
                           )}
                           
@@ -411,9 +415,11 @@ const AboutSection: React.FC<AboutSectionProps> = ({ achievements }) => {
 
             {/* Modal Content */}
             <div style={{ padding: '20px' }}>
-              <img
+              <Image
                 src={selectedImage.url}
                 alt={selectedImage.title}
+                width={800}
+                height={600}
                 style={{
                   width: '100%',
                   height: 'auto',
@@ -421,6 +427,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({ achievements }) => {
                   objectFit: 'contain',
                   borderRadius: '12px'
                 }}
+                unoptimized
               />
             </div>
           </div>

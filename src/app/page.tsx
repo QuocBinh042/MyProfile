@@ -7,13 +7,13 @@ import TechStackSection from '../components/TechStackSection';
 import AboutSection from '../components/AboutSection';
 import ProjectsSection from '../components/ProjectsSection';
 import ContactSection from '../components/ContactSection';
+import type { MediaItem } from '../components/ProjectsSection';
 
 const Portfolio = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
-  const heroRef = useRef(null);
 
   // Particle system for background
   useEffect(() => {
@@ -1335,7 +1335,7 @@ const Portfolio = () => {
       media: [
         { type: 'video', url: 'https://drive.google.com/file/d/10_VpH94rVx8JbpGq8sKbTMHcM6oiwZwQ/view?usp=sharing' },
         { type: 'video', url: 'https://drive.google.com/file/d/1K5WiHekcCtyh2XTqdoWlNl3crEKcNshO/view?usp=sharing' }
-      ]
+      ] as MediaItem[]
     }
     
   ];

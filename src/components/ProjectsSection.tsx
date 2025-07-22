@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-type MediaItem = {
+export type MediaItem = {
   type: 'video' | 'image';
   url: string;
   title?: string;
@@ -12,7 +12,7 @@ type Project = {
   description: string;
   tech: string[];
   status: string;
-  github: any;
+  github: { label: string; url: string }[];
   demo?: string; // Single demo URL (backward compatibility)
   media?: MediaItem[]; // New: Multiple videos/images
   duration?: string; // Project duration
