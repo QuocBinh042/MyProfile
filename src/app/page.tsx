@@ -1244,68 +1244,83 @@ const Portfolio = () => {
   }, []);
 
   const techStack = [
-    { 
-      name: 'Java', 
-      level: 85, 
-      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg',
-      isImage: true 
-    },
-    { 
-      name: 'JavaScript', 
-      level: 80, 
-      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
-      isImage: true 
-    },
-    { 
-      name: 'React', 
-      level: 75, 
-      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
-      isImage: true 
-    },
-    { 
-      name: 'Node.js', 
-      level: 70, 
-      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
-      isImage: true 
-    },
-    { 
-      name: 'Spring Boot', 
-      level: 80, 
-      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg',
-      isImage: true 
-    },
-    { 
-      name: 'MySQL', 
-      level: 75, 
-      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
-      isImage: true 
-    },
-    { 
-      name: 'MongoDB', 
-      level: 65, 
-      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
-      isImage: true 
-    },
-    { 
-      name: 'Git', 
-      level: 85, 
-      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
-      isImage: true 
-    },
-    { 
-      name: 'Docker', 
-      level: 60, 
-      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
-      isImage: true 
-    },
-    { 
-      name: 'HTML/CSS', 
-      level: 90, 
+    // Frontend
+    {
+      name: 'HTML/CSS',
+      level: 90,
       icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
-      isImage: true 
+      isImage: true
+    },
+    {
+      name: 'JavaScript',
+      level: 80,
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+      isImage: true
+    },
+    {
+      name: 'React',
+      level: 75,
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+      isImage: true
+    },
+    // Backend
+    {
+      name: 'Java',
+      level: 85,
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg',
+      isImage: true
+    },
+    {
+      name: 'Spring Boot',
+      level: 80,
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg',
+      isImage: true
+    },
+    {
+      name: 'Node.js',
+      level: 70,
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
+      isImage: true
+    },
+    // Database
+    {
+      name: 'MySQL',
+      level: 75,
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
+      isImage: true
+    },
+    {
+      name: 'MongoDB',
+      level: 65,
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
+      isImage: true
+    },
+    {
+      name: 'MSSQL',
+      level: 70,
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg',
+      isImage: true
+    },
+    {
+      name: 'Docker',
+      level: 60,
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
+      isImage: true
+    },
+    {
+      name: 'AWS',
+      level: 60,
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
+      isImage: true
+    },
+    {
+      name: 'Git',
+      level: 85,
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
+      isImage: true
     }
   ];
-  
+
   const achievements = [
     {
       achievement: 'Youth and Children\'s Creativity Contest',
@@ -1358,8 +1373,8 @@ const Portfolio = () => {
       description: 'A fully functional online footwear retail system with separate frontend (ReactJS, Ant Design, Redux Toolkit) and backend (Spring Boot, MySQL, JWT, Docker). The platform supports product browsing, cart and order management, secure user/admin authentication, VnPay payment, Cloudinary image storage, Redis caching, and is fully containerized for deployment. All APIs are documented with Swagger.',
       tech: ['ReactJS', 'Spring Boot', 'MySQL', 'Ant Design', 'Redux Toolkit', 'JWT', 'Docker', 'Redis', 'Swagger', 'Cloudinary', 'VnPay'],
       status: 'Completed',
-      duration: 'Dec 2024 – May 2025', 
-      teamSize: 2, 
+      duration: 'Dec 2024 – May 2025',
+      teamSize: 2,
       github: [
         { label: 'Frontend', url: 'https://github.com/QuocBinh042/shoe-store-frontend' },
         { label: 'Backend', url: 'https://github.com/QuocBinh042/shoe-store-backend' }
@@ -1387,7 +1402,7 @@ const Portfolio = () => {
         { type: 'video', url: 'https://drive.google.com/file/d/1K5WiHekcCtyh2XTqdoWlNl3crEKcNshO/view?usp=sharing' }
       ] as MediaItem[]
     }
-    
+
   ];
 
   return (
