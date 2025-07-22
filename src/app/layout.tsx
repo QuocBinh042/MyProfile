@@ -10,7 +10,7 @@ export const metadata = {
     siteName: "Portfolio | Trần Lê Quốc Bình",
     images: [
       {
-        url: "/images/og-image.jpg",
+        url: "/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Portfolio Trần Lê Quốc Bình",
@@ -23,7 +23,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Portfolio | Trần Lê Quốc Bình",
     description: "Trang portfolio cá nhân của Trần Lê Quốc Bình - Lập trình viên, sinh viên IUH.",
-    images: ["/images/og-image.jpg"],
+    images: ["/images/og-image.png"],
   },
 };
 
