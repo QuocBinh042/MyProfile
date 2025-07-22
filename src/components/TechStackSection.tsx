@@ -1,6 +1,6 @@
 import React from 'react';
 
-type TechStack = { name: string; level: number; icon: string }[];
+type TechStack = { name: string; level: number; icon: string; isImage?: boolean }[];
 
 type TechStackSectionProps = {
   techStack: TechStack;
@@ -14,7 +14,13 @@ const TechStackSection: React.FC<TechStackSectionProps> = ({ techStack }) => (
         <div className="tech-grid">
           {techStack.map((tech, index) => (
             <div key={index} className="tech-card" style={{animationDelay: `${index * 0.1}s`}}>
-              <div className="tech-icon">{tech.icon}</div>
+              <div className="tech-icon">
+                {tech.isImage ? (
+                  <img src={tech.icon} alt={tech.name} style={{ width: 40, height: 40 }} />
+                ) : (
+                  tech.icon
+                )}
+              </div>
               <div className="tech-name">{tech.name}</div>
             </div>
           ))}
